@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pid-model/static/css/main.2c1ae835.chunk.css",
+    "main.js": "/pid-model/static/js/main.20ab9101.chunk.js",
+    "main.js.map": "/pid-model/static/js/main.20ab9101.chunk.js.map",
+    "runtime~main.js": "/pid-model/static/js/runtime~main.acca72a3.js",
+    "runtime~main.js.map": "/pid-model/static/js/runtime~main.acca72a3.js.map",
+    "static/js/2.b445c1af.chunk.js": "/pid-model/static/js/2.b445c1af.chunk.js",
+    "static/js/2.b445c1af.chunk.js.map": "/pid-model/static/js/2.b445c1af.chunk.js.map",
+    "index.html": "/pid-model/index.html",
+    "precache-manifest.9c9a0867ef5560f52560f5f363dd969e.js": "/pid-model/precache-manifest.9c9a0867ef5560f52560f5f363dd969e.js",
+    "service-worker.js": "/pid-model/service-worker.js",
+    "static/css/main.2c1ae835.chunk.css.map": "/pid-model/static/css/main.2c1ae835.chunk.css.map",
+    "static/media/colab_rounded.png": "/pid-model/static/media/colab_rounded.e8946904.png",
+    "static/media/densenet.png": "/pid-model/static/media/densenet.78543f49.png",
+    "static/media/modelA.png": "/pid-model/static/media/modelA.a2bd1c9e.png",
+    "static/media/modelB.png": "/pid-model/static/media/modelB.08138b99.png",
+    "static/media/modelC.png": "/pid-model/static/media/modelC.c4a8b1ee.png"
+  }
+}
