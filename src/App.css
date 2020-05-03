@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+a[type=menu] {
+  color: #FFF;
+}
+a:hover[type=menu] {
+   color: rgb(209, 209, 209)
+}
+a:link{
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+.link:link {
+  text-decoration: none;
+}
+.link:visited {
+  text-decoration: none;
+}
+.link {
+  color: #000;
+}
+.link:hover {
+   color: rgb(75, 75, 75)
+}
