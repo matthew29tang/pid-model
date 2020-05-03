@@ -4,6 +4,7 @@ import Divider from '@material-ui/core/Divider';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import styles from './commonStyles.js';
 
 class Integrated extends React.Component {
   constructor(props) {
@@ -43,27 +44,5 @@ class Integrated extends React.Component {
     );
   }
 }
-
-const styles = theme => ({
-  card: {
-    minWidth: 275,
-    marginBottom: 20,
-    padding: 18,
-  },
-  title: {
-    fontSize: 14,
-  },
-  header: {
-    fontSize: 18,
-  },
-  paper: {
-    padding: theme.spacing(3, 2),
-  },
-  body: {
-    textAlign: "left",
-    wordWrap: "break-word",
-    paddingLeft: '15px'
-  }
-});
 
 export default withStyles(styles)(Integrated);

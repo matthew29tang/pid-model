@@ -4,6 +4,7 @@ import Divider from '@material-ui/core/Divider';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import styles from './commonStyles.js';
 
 class Pose extends React.Component {
   constructor(props) {
@@ -25,7 +26,9 @@ class Pose extends React.Component {
           <h1>Pose Estimation: Skeleton Tracking</h1>
           <Divider />
           <br />
-          Insert description and GIFS here
+          <div className={classes.body}>
+          The skeleton fitting algorithm takes an image as input and returns up to 17 keypoints for the pedestrian. Out of these 17 keypoints, 9 were chosen to be most important for the classification. 396 features were then calculated, consisting of angles and distances between these 9 keypoints and the horizontal plane. For this implementation, the BB’s from the object detector was used to crop each image prior to the skeleton fitting algorithm so that each image only portrayed one pedestrian.
+          </div>
           <br /><br />
           
         </Paper>
@@ -33,27 +36,5 @@ class Pose extends React.Component {
     );
   }
 }
-
-const styles = theme => ({
-  card: {
-    minWidth: 275,
-    marginBottom: 20,
-    padding: 18,
-  },
-  title: {
-    fontSize: 14,
-  },
-  header: {
-    fontSize: 18,
-  },
-  paper: {
-    padding: theme.spacing(3, 2),
-  },
-  body: {
-    textAlign: "left",
-    wordWrap: "break-word",
-    paddingLeft: '15px'
-  }
-});
 
 export default withStyles(styles)(Pose);
