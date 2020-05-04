@@ -1,20 +1,28 @@
 {
   "files": {
     "main.css": "/pid-model/static/css/main.2c1ae835.chunk.css",
-    "main.js": "/pid-model/static/js/main.41cf3dce.chunk.js",
-    "main.js.map": "/pid-model/static/js/main.41cf3dce.chunk.js.map",
+    "main.js": "/pid-model/static/js/main.871c70ab.chunk.js",
+    "main.js.map": "/pid-model/static/js/main.871c70ab.chunk.js.map",
     "runtime~main.js": "/pid-model/static/js/runtime~main.acca72a3.js",
     "runtime~main.js.map": "/pid-model/static/js/runtime~main.acca72a3.js.map",
-    "static/js/2.b445c1af.chunk.js": "/pid-model/static/js/2.b445c1af.chunk.js",
-    "static/js/2.b445c1af.chunk.js.map": "/pid-model/static/js/2.b445c1af.chunk.js.map",
+    "static/js/2.b5c3b824.chunk.js": "/pid-model/static/js/2.b5c3b824.chunk.js",
+    "static/js/2.b5c3b824.chunk.js.map": "/pid-model/static/js/2.b5c3b824.chunk.js.map",
     "index.html": "/pid-model/index.html",
-    "precache-manifest.12672af2ce5a4c15907354c8005f34fb.js": "/pid-model/precache-manifest.12672af2ce5a4c15907354c8005f34fb.js",
+    "precache-manifest.62981ab828a7e159c5fbae8999e9aab8.js": "/pid-model/precache-manifest.62981ab828a7e159c5fbae8999e9aab8.js",
     "service-worker.js": "/pid-model/service-worker.js",
     "static/css/main.2c1ae835.chunk.css.map": "/pid-model/static/css/main.2c1ae835.chunk.css.map",
     "static/media/colab_rounded.png": "/pid-model/static/media/colab_rounded.e8946904.png",
     "static/media/densenet.png": "/pid-model/static/media/densenet.78543f49.png",
     "static/media/modelA.png": "/pid-model/static/media/modelA.a2bd1c9e.png",
+    "static/media/modelA1.gif": "/pid-model/static/media/modelA1.cb03bfe4.gif",
+    "static/media/modelA2.gif": "/pid-model/static/media/modelA2.41a1b6cc.gif",
+    "static/media/modelA3.gif": "/pid-model/static/media/modelA3.19e14cc4.gif",
+    "static/media/modelA4.gif": "/pid-model/static/media/modelA4.9d2c69ef.gif",
     "static/media/modelB.png": "/pid-model/static/media/modelB.08138b99.png",
+    "static/media/modelB1.gif": "/pid-model/static/media/modelB1.6c1ae136.gif",
+    "static/media/modelB2.gif": "/pid-model/static/media/modelB2.521c60d8.gif",
+    "static/media/modelB3.gif": "/pid-model/static/media/modelB3.69e88c9d.gif",
+    "static/media/modelB4.gif": "/pid-model/static/media/modelB4.6483a0d9.gif",
     "static/media/modelC.png": "/pid-model/static/media/modelC.c4a8b1ee.png"
   }
 }
