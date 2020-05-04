@@ -4,6 +4,7 @@ import Divider from '@material-ui/core/Divider';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import Colab from './Colab.js';
 import styles from './commonStyles.js';
 
 class Pose extends React.Component {

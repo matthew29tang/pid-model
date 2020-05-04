@@ -101,7 +101,13 @@ class Integrated extends React.Component {
                   </Paper>
                   <br />
                   <div className={classes.body}>
-                    Model A consists of 3 components: YOLO, SORT, and Densenet. This was the first integrated model that we created.
+                    Model A was our first unified framework for pedestrian intention prediction. It consisted of 3 parts:
+                    <ol>
+                    <li> YOLOv3 (Object detector): Responsible to identify and detect objects of interest in a given frame or image.</li>
+                    <li>SORT (Object Tracker): responsible to track the identified pedestrians for the sequence of frames and maintain unique IDs for each pedestrian.</li>
+
+                    <li>Spatio-Temporal DenseNet (Classifier): responsible to classify every identified and tracked pedestrian's intention by using the last 16 frames of a pedetrian.</li>
+                    </ol>
                   </div>
                   <br />
                   <Grid container spacing={3}>
@@ -131,7 +137,6 @@ class Integrated extends React.Component {
 
                   <br />
                   <Colab desc="Model A" link="https://colab.research.google.com/drive/1qztt4iC0kNcJKVF5o1pbefdEWnP9VwcL?usp=sharing" />
-                  <br /><br />
                 </div> : ''}
             </TabContainer>
 
@@ -171,7 +176,7 @@ class Integrated extends React.Component {
                     </Grid>
                   </Grid>
                   <br />
-                  <Colab desc="Model B" link="https://colab.research.google.com/drive/1qztt4iC0kNcJKVF5o1pbefdEWnP9VwcL?usp=sharing" />
+                  <Colab desc="Model B" link="https://colab.research.google.com/drive/1AOx2hzWeQceorhu75Zvc0esZLw0SzlRH?usp=sharing" />
                   <br /><br />
                 </div> : ''}
             </TabContainer>
@@ -202,8 +207,8 @@ class Integrated extends React.Component {
                   </div>
                   <br />
 
-                  <h2 style={{marginBottom:"0px"}}>Side by Side Comparison</h2>
-                  <h5 style={{marginTop:"5px", marginBottom:"10px"}}>Note: Click the Video tabs to resync the GIFs if they fall out of sync.</h5>
+                  <h2 style={{ marginBottom: "0px" }}>Side by Side Comparison</h2>
+                  <h5 style={{ marginTop: "5px", marginBottom: "10px" }}>Note: Click the Video tabs to resync the GIFs if they fall out of sync.</h5>
                   <AppBar position="static" color="default">
                     <Tabs
                       value={this.state.innerTab}
@@ -219,7 +224,7 @@ class Integrated extends React.Component {
 
                     </Tabs>
                   </AppBar>
-                  <br/>
+                  <br />
                   <Grid container spacing={3}>
                     <Grid item xs={4}>
                       <Paper className={classes.paper}>
@@ -241,14 +246,7 @@ class Integrated extends React.Component {
                   <br /><br />
                 </div> : ''}
             </TabContainer>
-
-
           </SwipeableViews>
-
-
-
-
-
         </Paper>
       </div>
     );

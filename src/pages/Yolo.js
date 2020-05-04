@@ -9,12 +9,9 @@ import styles from './commonStyles.js';
 class Yolo extends React.Component {
   constructor(props) {
     super(props);
-    this.images = [
-      require('./images/modelC.png'),
-      require('./images/yolo.png'),
-      require('./images/sort.png'),
-      require('./images/pose.png'),
-      require('./images/densenet.png'),
+    this.gifs = [
+      require('./gifs/yolo1.gif'),
+      require('./gifs/yolo2.gif'),
     ];
   }
 
@@ -29,8 +26,21 @@ class Yolo extends React.Component {
           <div className={classes.body}>
             The first component is YOLOv3, a state-of-the-art object detection system. The system works by applying a single neural network to the full image, which divides the image into regions and predicts the bounding boxes and probabilities for each region. At test time, it looks at the whole image to predict objects based on overall context. It takes as input a series of frames and gives as output bounding boxes for all the identified objects in every frame.
           </div>
-          <br /><br />
+          <br />
           <Colab desc="YOLO" link="https://colab.research.google.com/drive/1h8NX3MSecJE2fdiEzKIv0JkXilxyA9ng?usp=sharing" />
+          <br /><br />
+          <Grid container spacing={3}>
+            <Grid item xs={6}>
+              <Paper className={classes.paper}>
+                <img src={this.gifs[0]} alt="yolo1" width="90%" />
+              </Paper>
+            </Grid>
+            <Grid item xs={6}>
+              <Paper className={classes.paper}>
+                <img src={this.gifs[1]} alt="yolo2" width="90%" />
+              </Paper>
+            </Grid>
+          </Grid>
         </Paper>
       </div>
     );
