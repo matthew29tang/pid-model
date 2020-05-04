@@ -17,7 +17,11 @@ const styles = theme => ({
       textAlign: "left",
       wordWrap: "break-word",
       paddingLeft: '15px'
-    }
+    },
+    root: {
+      flexGrow: 1,
+      padding: theme.spacing(3, 2),
+    },
   });
 
 export default styles;

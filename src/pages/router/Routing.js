@@ -42,7 +42,6 @@ const routing = (
 
 class Routing extends React.Component {
   render() {
-    const { classes } = this.props;
     return (
       <Grid
         container
