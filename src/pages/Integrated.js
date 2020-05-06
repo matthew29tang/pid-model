@@ -2,8 +2,6 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button';
-import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -41,6 +39,10 @@ class Integrated extends React.Component {
       require('./gifs/modelB4.gif'),
     ]
     ];
+    this.resultGifs = [
+      require('./gifs/modelADetect.gif'),
+      require('./gifs/modelBDetect.gif')
+    ]
     this.state = {
       tab: 0,
       innerTab: 0,
@@ -103,10 +105,10 @@ class Integrated extends React.Component {
                   <div className={classes.body}>
                     Model A was our first unified framework for pedestrian intention prediction. It consisted of 3 parts:
                     <ol>
-                    <li> YOLOv3 (Object detector): Responsible to identify and detect objects of interest in a given frame or image.</li>
-                    <li>SORT (Object Tracker): responsible to track the identified pedestrians for the sequence of frames and maintain unique IDs for each pedestrian.</li>
+                      <li> YOLOv3 (Object detector): Responsible to identify and detect objects of interest in a given frame or image.</li>
+                      <li>SORT (Object Tracker): responsible to track the identified pedestrians for the sequence of frames and maintain unique IDs for each pedestrian.</li>
 
-                    <li>Spatio-Temporal DenseNet (Classifier): responsible to classify every identified and tracked pedestrian's intention by using the last 16 frames of a pedetrian.</li>
+                      <li>Spatio-Temporal DenseNet (Classifier): responsible to classify every identified and tracked pedestrian's intention by using the last 16 frames of a pedetrian.</li>
                     </ol>
                   </div>
                   <br />
@@ -200,14 +202,7 @@ class Integrated extends React.Component {
             <TabContainer >
               {this.state.tab === 3 ?
                 <div>
-                  <h2>Results</h2>
-                  <br />
-                  <div className={classes.body}>
-                    Results here
-                  </div>
-                  <br />
-
-                  <h2 style={{ marginBottom: "0px" }}>Side by Side Comparison</h2>
+                  <h2 style={{ marginBottom: "0px", marginTop: "0px" }}>Side by Side Comparison</h2>
                   <h5 style={{ marginTop: "5px", marginBottom: "10px" }}>Note: Click the Video tabs to resync the GIFs if they fall out of sync.</h5>
                   <AppBar position="static" color="default">
                     <Tabs
@@ -242,8 +237,34 @@ class Integrated extends React.Component {
                       </Paper>
                     </Grid>
                   </Grid>
+                  <br />
+                  <h2>Results</h2>
+                  <div className={classes.body}>
+                    We used three different metrics to anaylze Model A's performance. The first involved using the accuracy of the model's prediction of a pedestrian's intent 16 frames (with videos running at 30fps, around half a second) before they cross which was 0.345. The second involved using the accuracy of the model's prediction of a pedestrian's intent at the frame at which they actually begin crossing, which was 0.479. The third involved using the percentage accuracy of the model's prediction of a pedestrian's intent 16 frames before, which was 0.468.
+                  </div>
+                  <br />
+                  <div className={classes.body}>
+                    For Model B, DeepSORT was able to detect pedestrians crossing several frames before Model A was able to. The below GIFs show that Model B was able to detect a pedestrian crossing 4 frames before Model A.
+                  </div>
+                  < br />
+                  <Grid container spacing={3}>
+                    <Grid item xs={6}>
+                      <Paper className={classes.paper}>
+                        <img src={this.resultGifs[0]} alt="modelB1" width="90%" /><br />
+                        SORT detects pedestrian at Frame 83
+                      </Paper>
 
-                  <br /><br />
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Paper className={classes.paper}>
+                        <img src={this.resultGifs[1]} alt="modelB2" width="90%" /><br />
+                        DeepSORT detects pedestrian at Frame 79
+                      </Paper>
+
+                    </Grid>
+                  </Grid>
+                  <br />
+
                 </div> : ''}
             </TabContainer>
           </SwipeableViews>
