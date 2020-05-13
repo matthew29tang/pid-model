@@ -31,7 +31,7 @@ class Densenet extends React.Component {
           <Colab desc="Densenet" link="https://colab.research.google.com/drive/1LN-Ei5sM1X-4zvt8lhxch4jCkfW56eF8?usp=sharing#forceEdit=true&sandboxMode=true" />
           <div className={classes.body}>
             <br />
-          After achieving a similar classification result to the <a href="https://doi.org/10.1016/j.neucom.2019.12.091">original paper</a> we based our work off, we put effort into improving it. We integrated a pose estimating skeleton model that calculates the up to 17 skeleton points in an image of a pedestrian. The model was used in 2 ways which we refer to as early and late fusion. Early fusion consists in highlining the skeleton points in the images prior to feeding them into the dense-net as shown in the image below.
+          After achieving a similar classification result to the <a href="https://arxiv.org/abs/1904.09862">original paper</a> we based our work off, we put effort into improving it. We integrated a pose estimating skeleton model that calculates the up to 17 skeleton points in an image of a pedestrian. The model was used in 2 ways which we refer to as early and late fusion. Early fusion consists in highlining the skeleton points in the images prior to feeding them into the densenet as shown in the image below.
           <br /> <br />
           </div>
           <img src={this.images[2]} width="90%" alt="densenetFig" />
