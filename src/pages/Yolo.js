@@ -27,7 +27,7 @@ class Yolo extends React.Component {
             The first component is YOLOv3, a state-of-the-art object detection system. The system works by applying a single neural network to the full image, which divides the image into regions and predicts the bounding boxes and probabilities for each region. At test time, it looks at the whole image to predict objects based on overall context. It takes as input a series of frames and gives as output bounding boxes for all the identified objects in every frame.
           </div>
           <br />
-          <Colab desc="YOLO" link="https://colab.research.google.com/drive/1h8NX3MSecJE2fdiEzKIv0JkXilxyA9ng?usp=sharing" />
+          <Colab desc="YOLO" link="https://colab.research.google.com/drive/1h8NX3MSecJE2fdiEzKIv0JkXilxyA9ng?usp=sharing#forceEdit=true&sandboxMode=true" />
           <br /><br />
           <Grid container spacing={3}>
             <Grid item xs={6}>

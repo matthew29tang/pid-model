@@ -24,7 +24,8 @@ class Home extends React.Component {
     return (
       <div className="Home">
         <Paper className={classes.paper}>
-          <h2>An End-to-end System for Pedestrian Intention Detection using Bounding Box and Skeletal Features</h2>
+          <h2>Unified Framework for Pedestrian Detection & Intention Classification </h2>
+          {false ? <h2>An End-to-end System for Pedestrian Intention Detection using Bounding Box and Skeletal Features</h2> : ""}
           <Divider />
           <h3>Rajarathnam Balakrishnan, Francesco Piccoli, Maria Jesus Perez, Moraldeepsingh Sachdeo, Carlos Nuñez, Matthew Tang 
 </h3>

@@ -29,7 +29,7 @@ class Sort extends React.Component {
             Deep SORT is an elegant object tracking framework and extension of SORT (Simple Real Time Tracker). This algorithm relies on the kalman filter that uses available detections and previous predictions to guess the current state of the object. Unlike SORT, Deep SORT handles occlusions or re-appearances of objects by combining a deep learning technique with the Mahalanobis distance metric. It takes as input the bounding boxes produced by YOLOv3 and gives as output a unique identifier for each object and its respective bounding boxes across the frame sequence.
           </div>
           <br />
-          <Colab desc="DeepSORT" link="https://colab.research.google.com/drive/1eVIkTWFULdCgLcJzUBJTHgcSnnWryPvZ?usp=sharing" />
+          <Colab desc="DeepSORT" link="https://colab.research.google.com/drive/1eVIkTWFULdCgLcJzUBJTHgcSnnWryPvZ?usp=sharing#forceEdit=true&sandboxMode=true" />
           <br />
           <Grid container spacing={3}>
             <Grid item xs={6}>

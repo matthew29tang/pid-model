@@ -210,7 +210,7 @@ class Integrated extends React.Component {
                   </Paper>
                   <br />
                   <div className={classes.body}>
-                    Model C consists of 4 components: YOLO, SORT, Skeleton Tracking, and Densenet. This integrated framework combined the work from students at Chalmers University on using pose estimation for pedestrian intent detection with our (UC Berkeley) framework to achieve higher accuracies.
+                    Model C consists of 4 components: YOLO, SORT, Skeleton Tracking, and Densenet. This integrated framework combined the work from students at Chalmers University on using pose estimation for pedestrian intent detection with our (UC Berkeley) framework to achieve higher accuracies. Model C was concluded to be the best performing model which is further explored in "Results".
                   </div>
                   <br />
                   <Grid container spacing={3}>
@@ -238,7 +238,7 @@ class Integrated extends React.Component {
                     </Grid>
                   </Grid>
                   <br />
-                  <Colab desc="Model C" link="https://colab.research.google.com/drive/1qztt4iC0kNcJKVF5o1pbefdEWnP9VwcL?usp=sharing" />
+                  <Colab desc="Model C" link="https://colab.research.google.com/drive/1d8PEeSdVlP0JogKwkytvFeyXXPu_qfXg?usp=sharing#forceEdit=true&sandboxMode=true" />
                   <br /><br />
                 </div> : ''}
             </TabContainer>
@@ -279,7 +279,7 @@ class Integrated extends React.Component {
                     </Grid>
                   </Grid>
                   <br />
-                  <Colab desc="Model D" link="https://colab.research.google.com/drive/1qztt4iC0kNcJKVF5o1pbefdEWnP9VwcL?usp=sharing" />
+                  <Colab desc="Model D" link="https://colab.research.google.com/drive/1zBR_MaibETkvZWhUiWrnwhQbmJRnko9j?usp=sharing#forceEdit=true&sandboxMode=true" />
                   <br /><br />
                 </div> : ''}
             </TabContainer>
@@ -321,18 +321,18 @@ class Integrated extends React.Component {
                   <br />
                   <h2>Results</h2>
                   <div className={classes.body}>
+                    Lets assume that the pedestrian crosses at frame k, then let:
                     <ol>
-                      <li>M1: The accuracy in predicting the crossing action exactly 16 frames (same as the sliding window used for densenet) before it takes place (around 0.5 seconds). </li>
-                      <li>M2: The percentage of "crossing" prediction in the 16 frames proceeding the action </li>
-                      <li>M3: The accuracy in predicting the crossing action in the frame where the action actually takes place. </li>
+                      <li>M1: The accuracy of intention prediction in k-16th frame  </li>
+                      <li>M2: The accuracy of intention prediction in kth frame </li>
+                      <li>M3: The percentage of accuracy scores for intention predictions for frames between k-16th and kth frame </li>
                     </ol>
-                    For example, if the GT tells us that the pedestrian is crossing at frame 17, we will check whether our models predict "crossing" at frame 1, at frame 17, and the percentage of "crossing" predictions between frames 1 and 16. We went through the same procedure for each pedestrian in all the videos to calculate the accuracy and the average percentage. We excluded the pedestrians whose crossing action was happening before the 16th frame, as it wouldn’t have been possible to calculate M2 and M3.
-
                   </div>
                   <br />
                   <img src={this.resultImages[0]} width="45%" alt="metrics" />
+                  <br /><br />
                   <div className={classes.body}>
-                    From the metrics we conclude that Model C gives the highest performance.
+                    From the different models A, B, C, and D that we built, it appears that Model C has an overall better performance compared to others. Model B and D that use DeepSORT as tracker tends to provide somewhat lower performance compared to Models A and C. One cause might be the fact that it was not trained on JAAD dataset. As intention prediction is a safety aspect for a vehicle, the main constraints are less false alarms and consistent predictions, which is evident in the different videos compared at the top. So, Model C is better in terms of predicting the intention 0.5 secs (16 frames) before the action occurs as per the table for integrated results.
                   </div>
                   <br />
 
