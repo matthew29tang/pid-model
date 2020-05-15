@@ -16,6 +16,9 @@ import Button from '@material-ui/core/Button';
 import Routing from './Routing.js';
 import styles from './navBarStyles.js'
 
+var paper = require('../pdfs/FuSSI-Net.pdf');
+var supp = require('../pdfs/Supplementary_Material.pdf');
+
 
 class NavBar extends React.Component {
   render() {
@@ -60,6 +63,13 @@ class NavBar extends React.Component {
               <NavLink activeClassName="active" className="link" to={"/densenet/"} type="menu" style={{ marginRight: '20px' }}>
                 <Button color="inherit">Densenet</Button>
               </NavLink>
+              <a href={paper} target="_blank" rel="noopener noreferrer" className="link" style={{ marginRight: '20px' }}>
+                <Button color="inherit">Paper</Button>
+              </a>
+              <a href={supp} target="_blank" rel="noopener noreferrer" className="link" style={{ marginRight: '20px' }}>
+                <Button color="inherit">Supplementary</Button>
+              </a>
+
             </Router>
           </Toolbar>
         </AppBar>

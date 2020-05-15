@@ -21,8 +21,8 @@ a:visited {
   text-decoration: none;
 }
 .link {
-  color: #000;
+  color: #FFF;
 }
 .link:hover {
-   color: rgb(75, 75, 75)
+   color: rgb(201, 201, 201);
 }
