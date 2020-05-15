@@ -1,23 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e41afb8b293c2c1d79f05b9cb8ff5541",
+    "revision": "635e384f75d2a05fb37d1d5c35b6ce65",
     "url": "/pid-model/index.html"
   },
   {
-    "revision": "3a39e67a6260f167a1cb",
-    "url": "/pid-model/static/css/main.2c1ae835.chunk.css"
+    "revision": "da0eab580ce29841cf27",
+    "url": "/pid-model/static/css/main.708234e8.chunk.css"
   },
   {
-    "revision": "97d92c72be92890fc399",
-    "url": "/pid-model/static/js/2.39bcde58.chunk.js"
+    "revision": "2a69b723a239f3d7af88",
+    "url": "/pid-model/static/js/2.20dcc2d2.chunk.js"
   },
   {
-    "revision": "3a39e67a6260f167a1cb",
-    "url": "/pid-model/static/js/main.c310e0a3.chunk.js"
+    "revision": "da0eab580ce29841cf27",
+    "url": "/pid-model/static/js/main.cbe14fc8.chunk.js"
   },
   {
     "revision": "b5b5b1ac35b4381f8095",
     "url": "/pid-model/static/js/runtime~main.acca72a3.js"
+  },
+  {
+    "revision": "16c1adf82339c2f18c10239146e05b3a",
+    "url": "/pid-model/static/media/FuSSI-Net.16c1adf8.pdf"
+  },
+  {
+    "revision": "3ce0c43f5df021a34c14857198ddfddf",
+    "url": "/pid-model/static/media/Supplementary_Material.3ce0c43f.pdf"
   },
   {
     "revision": "e8946904f01674b12e8f1ad05bba14dc",
