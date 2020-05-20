@@ -1,27 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "635e384f75d2a05fb37d1d5c35b6ce65",
+    "revision": "add67d3dbcce5c5aafc068d570e809c0",
     "url": "/pid-model/index.html"
   },
   {
-    "revision": "da0eab580ce29841cf27",
+    "revision": "2550f7909351711b93e0",
     "url": "/pid-model/static/css/main.708234e8.chunk.css"
   },
   {
-    "revision": "2a69b723a239f3d7af88",
-    "url": "/pid-model/static/js/2.20dcc2d2.chunk.js"
+    "revision": "1c209cf3a95706dd1e35",
+    "url": "/pid-model/static/js/2.f042f7ed.chunk.js"
   },
   {
-    "revision": "da0eab580ce29841cf27",
-    "url": "/pid-model/static/js/main.cbe14fc8.chunk.js"
+    "revision": "2550f7909351711b93e0",
+    "url": "/pid-model/static/js/main.cbf2ef4b.chunk.js"
   },
   {
     "revision": "b5b5b1ac35b4381f8095",
     "url": "/pid-model/static/js/runtime~main.acca72a3.js"
-  },
-  {
-    "revision": "16c1adf82339c2f18c10239146e05b3a",
-    "url": "/pid-model/static/media/FuSSI-Net.16c1adf8.pdf"
   },
   {
     "revision": "3ce0c43f5df021a34c14857198ddfddf",
