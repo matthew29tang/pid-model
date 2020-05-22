@@ -16,7 +16,7 @@ import Button from '@material-ui/core/Button';
 import Routing from './Routing.js';
 import styles from './navBarStyles.js'
 
-var paper = require('../pdfs/FuSSI-Net.pdf');
+var paper = "https://arxiv.org/abs/2005.07796";
 var supp = require('../pdfs/Supplementary_Material.pdf');
 
 
@@ -42,7 +42,7 @@ class NavBar extends React.Component {
               <Router>
                 <NavLink activeClassName="active" className="link" to={"/"} type="menu">
                   <div style={{ marginLeft: '20px', textAlign: 'left' }}>
-                    Pedestrian Intent Detection
+                    FuSSI-Net
                     </div>
                 </NavLink>
               </Router>
@@ -69,6 +69,9 @@ class NavBar extends React.Component {
               <a href={supp} target="_blank" rel="noopener noreferrer" className="link" style={{ marginRight: '20px' }}>
                 <Button color="inherit">Supplementary</Button>
               </a>
+              <NavLink activeClassName="active" className="link" to={"/about/"} type="menu" style={{ marginRight: '20px' }}>
+                <Button color="inherit">About</Button>
+              </NavLink>
 
             </Router>
           </Toolbar>

@@ -10,7 +10,7 @@ import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 
 import Notfound from "./notfound.js";
-// import About from "../About.js";
+import About from "../About.js";
 import Home from '../Home.js';
 import Integrated from '../Integrated.js';
 import Yolo from '../Yolo.js';
@@ -34,6 +34,7 @@ const routing = (
         <Route path="/sort/" component={Sort} />
         <Route path="/pose/" component={Pose} />
         <Route path="/densenet/" component={Densenet} />
+        <Route path="/about/" component={About} />
         <Route component={Notfound} />
       </Switch>
     </div>
