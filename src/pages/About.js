@@ -34,6 +34,8 @@ class About extends React.Component {
       require('./about/colin.JPG'),
       require('./about/victor.png'),
       require('./about/jonas.jpg'),
+      require('./about/kajsa.jpeg'),
+      require('./about/srikar.jpg'),
     ];
     this.chalmersURLs = [
       ["https://www.linkedin.com/in/kalle-bjurek"],
@@ -41,7 +43,9 @@ class About extends React.Component {
       ["https://www.linkedin.com/in/ebba-davidsson/"],
       ["https://www.linkedin.com/in/colin-eriksson-144513138"],
       ["https://www.linkedin.com/in/victor-hagman-301b88158/"],
-      ["https://www.chalmers.se/en/staff/Pages/jonas-sjoberg.aspx"]
+      ["https://www.chalmers.se/en/staff/Pages/jonas-sjoberg.aspx"],
+      ["https://www.linkedin.com/in/kajsa-andreasson-33250b181"],
+      ["https://www.linkedin.com/in/srikar-muppirisetty-phd-a4019413/", "https://sites.google.com/site/srikarmuppirisetty/"]
     ];
   }
 
@@ -91,8 +95,6 @@ class About extends React.Component {
               </Button>
             </Paper>
           </Grid>
-        </Grid>
-        <Grid container spacing={3}>
           <Grid item xs={4}>
             <Paper className={classes.paper}>
               <img src={this.berkeley[3]} alt="bio" width={imageWidth} />
@@ -138,10 +140,20 @@ class About extends React.Component {
         <Divider />
         <br />
         <Grid container spacing={3}>
+        <Grid item xs={4}>
+            <Paper className={classes.paper}>
+              <img src={this.chalmers[6]} alt="bio" width={imageWidth} />
+              <h2 style={{ marginTop: '3px', marginBottom: '5px' }}>Kajsa Andreasson</h2>
+              <h4 style={{ marginTop: '5px', marginBottom: '5px' }}>Mechanical Engineering 2022</h4>
+              <Button variant="contained" color="primary" className={classes.button} target="_blank" rel="noopener noreferrer" href={this.chalmersURLs[6][0]}>
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </Button>
+            </Paper>
+          </Grid>
           <Grid item xs={4}>
             <Paper className={classes.paper}>
               <img src={this.chalmers[0]} alt="bio" width={imageWidth} />
-              <h2 style={{ marginTop: '3px', marginBottom: '5px' }}>Kalle</h2>
+              <h2 style={{ marginTop: '3px', marginBottom: '5px' }}>Kalle Bjurek</h2>
               <h4 style={{ marginTop: '5px', marginBottom: '5px' }}>Automation and Mechatronics 2022</h4>
               <Button variant="contained" color="primary" className={classes.button} target="_blank" rel="noopener noreferrer" href={this.chalmersURLs[0][0]}>
                 <i class="fab fa-linkedin-in fa-2x"></i>
@@ -168,9 +180,7 @@ class About extends React.Component {
               </Button>
             </Paper>
           </Grid>
-        </Grid>
 
-        <Grid container spacing={3}>
           <Grid item xs={4}>
             <Paper className={classes.paper}>
               <img src={this.chalmers[3]} alt="bio" width={imageWidth} />
@@ -198,6 +208,19 @@ class About extends React.Component {
               <h4 style={{ marginTop: '5px', marginBottom: '5px' }}>Chalmers Team Advisor</h4>
               <Button variant="contained" color="primary" className={classes.button} target="_blank" rel="noopener noreferrer" href={this.chalmersURLs[5][0]}>
                 <i class="fab fa-linkedin-in fa-2x"></i>
+              </Button>
+            </Paper>
+          </Grid>
+          <Grid item xs={4}>
+            <Paper className={classes.paper}>
+              <img src={this.chalmers[7]} alt="bio" width={imageWidth} />
+              <h2 style={{ marginTop: '3px', marginBottom: '5px' }}>Srikar Muppirisetty</h2>
+              <h4 style={{ marginTop: '5px', marginBottom: '5px' }}>Volvo Chalmers Team Advisor</h4>
+              <Button variant="contained" color="primary" className={classes.button} style={{ marginRight: '20px' }} target="_blank" rel="noopener noreferrer" href={this.chalmersURLs[7][0]}>
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </Button>
+              <Button variant="contained" color="primary" className={classes.button} target="_blank" rel="noopener noreferrer" href={this.chalmersURLs[7][1]}>
+                <i class="fas fa-globe fa-2x"></i>
               </Button>
             </Paper>
           </Grid>
